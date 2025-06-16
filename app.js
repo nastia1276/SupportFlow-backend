@@ -10,7 +10,9 @@ const mySqlPool = require("./config/db");
 const UserModel = require("./models/user.model");
 const RequestModel = require("./models/request.model");
 const CommentModel = require("./models/comment.model");
-const telegramBot = require("./telegramBot");
+if (process.env.NODE_ENV !== "production") {
+  require("./telegramBot");
+}
 const passport = require("./passport");
 const apiRoutes = require("./routes");
 
