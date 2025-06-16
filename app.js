@@ -104,7 +104,7 @@ app.get("/logout", (req, res) => {
 });
 
 // Port
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 30598;
 
 mySqlPool
   .query("SELECT 1")
