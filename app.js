@@ -105,7 +105,7 @@ app.get("/logout", (req, res) => {
 
 // Port
 console.log("PORT from process.env:", process.env.PORT);
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 console.log("Server will start on PORT:", PORT);
 
 mySqlPool
