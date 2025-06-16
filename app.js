@@ -92,7 +92,9 @@ app.get(
     const db = require("./config/db");
     await db.query("UPDATE users SET role = ? WHERE id = ?", [role, user.id]);
 
-    res.redirect(`http://localhost:5173/home?token=${token}&loginType=google`);
+    res.redirect(
+      `https://supportflow.com/home?token=${token}&loginType=google`
+    );
   }
 );
 
